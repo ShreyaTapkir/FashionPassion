@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* font-family: 'Lobster', cursive; font-family: 'Sansita Swashed', cursive;*/
+
+.navbar{
+    display: flex;
+    /* align-items: center; */
+    padding: 20px;
+}
+.navbar nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    list-style:  none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+nav ul li a{
+    color: #2f3640;
+   
+}
+.navbar img{
+    cursor: pointer;
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2.5px;
+    background:#2d3436 ;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+   width: 100%;
+}
+.navbar #navimg{
+   margin-top: 15px;
+}
+nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    background:#2d3436 ;
+    
+}
+a{
+ text-decoration: none;
+ font-family: 'Josefin Sans', sans-serif;
+ 
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display:flex ;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+max-width: 100%;
+padding: 5px 0 0 0;
+}
+.btn{
+    display: inline-block;
+    background-color:#f88181;
+    color: black;
+    padding:  8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    /* margin-left: 100px; */
+   
+    font-family: 'Josefin Sans', sans-serif;
+    transition: background-color 0.5s ,color 0.5s;
+}
+.btn:hover{
+    background-color: #ED4C67;
+    color: white;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.col-2 h1{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+   font-size: 50px;
+   color: #2f3640;
+}
+.col-2 p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom:30px ;
+}
+.col-3 img{
+    width: 100%;
+    cursor: pointer;
+}
+.col-3 img:hover{
+    opacity: 0.8;
+}
+.small-cont{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-3 h1{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width:100% ;
+    cursor: pointer;
+}
+.col-4 h4,.col-4 p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5px;
+    font-weight: normal;
+}
+.title{
+    text-align: center;
+    margin:0 auto 40px ;
+    position: relative;
+    line-height: 60px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.title::after{
+    content: '';
+    background:  #ED4C67;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+small{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 40px;
+    padding: 30px 0;
+   
+}
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #2d3436; 
+}
+.test{
+    padding-top: 100px;
+}
+.test .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.test .col-3 img{
+    width:50px;
+    margin-top:20px ;
+    border-radius: 50%;
+}
+.test .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color:  #ED4C67;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.test .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+.rating{
+    color:  #ED4C67;
+}
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+   width: 100%;
+   cursor: pointer;
+   filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a ;
+}
+.footer h3{
+    color:white;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    /* It will contain all the available space */
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom:20px ;
+    cursor: pointer;
+}
+.footer-col-3,.footer-col-4{
+flex-basis: 12px;
+text-align: center;
+
+}
+.footer ul{
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.footer ul li{
+    margin-bottom: 3px;
+}
+ul li:hover{
+    cursor: pointer;
+    color: white;
+}
+.app{
+    margin-top: 20px;
+}
+.app img{
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copy{
+    text-align: center;
+}
+.fa.fa-bars{
+    margin-left: 10px;
+    width: 28px;
+    display: none;
+}
+/* Media queries for nav bar */
+
+@media only screen and (max-width:800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background:#faf8f8;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        
+    }
+   
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        text-align: right;
+        margin-top: 2px;
+        
+    }
+    nav ul li a{
+        color: #f31c40;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    nav ul li a:hover::after{
+        width:0;
+     }
+    nav ul li a:hover{
+       color: salmon;
+        
+    }
+    .fa.fa-bars{
+        display: block;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    nav ul li.active::after{
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2.5px;
+        background:#2d3436 ;
+        
+    }
+   
+    
+   
+  
+}
+
+/* Media queries for less than 600 screen size */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+    .col-2 h1{
+       font-size:35px;
+    }
+    .col-2{
+        margin-top: 40px;
+    }
+    .logo img{
+        height: 50px;
+        width: 120px;
+    }
+   
+
+} 
